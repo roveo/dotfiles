@@ -1,0 +1,2 @@
+#!/bin/bash
+/Users/roveo/bin/vertica-query-paste/vertica-query-paste "$1" ';' | pv -l
