@@ -1,0 +1,16 @@
+renamew main
+splitw -h 'nvim Dropbox/todo.txt'
+splitw -h
+select-layout even-horizontal
+selectp -t 1
+splitw
+splitw
+selectp -t 0
+neww -n dev
+selectw -t 1
+splitw -h
+splitw -h
+select-layout even-horizontal
+selectp -t 0
+killp
+selectw -t 0
