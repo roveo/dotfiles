@@ -1,3 +1,2 @@
 source ~/.vimrc
 set surround
-vmap " :'<,'>s/"//g<CR>
