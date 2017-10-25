@@ -1,2 +1,6 @@
 source ~/.vimrc
 set surround
+
+nmap H :prev<CR>
+nmap L :next<CR>
+
