@@ -34,6 +34,7 @@ Plug 'freitass/todo.txt-vim'
 Plug 'elzr/vim-json'
 Plug 'tomlion/vim-solidity'
 Plug 'trevordmiller/nova-vim'
+Plug 'sbdchd/neoformat'
 call plug#end()
 
 colorscheme solarized
