@@ -64,8 +64,8 @@ export TERM=xterm-256color
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export FZF_DEFAULT_COMMAND='find .'
-export JAVA_HOME=$(/usr/libexec/java_home)
-[[ -e ~/.pass ]] && source ~/.pass
+[[ -f /usr/libexec/java_home ]] && export JAVA_HOME=$(/usr/libexec/java_home)
+[[ -f ~/.pass ]] && source ~/.pass
 alias nv=nvim
 alias v=nvim
 alias o='open "$(fzf)"'
