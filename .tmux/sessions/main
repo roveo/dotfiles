@@ -1,5 +1,5 @@
 renamew main
-splitw -h 'nvim Dropbox/todo.txt'
+splitw -h 'ranger Dropbox/notes'
 splitw -h
 select-layout even-horizontal
 selectp -t 1
