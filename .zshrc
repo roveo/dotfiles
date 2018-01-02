@@ -72,5 +72,6 @@ alias o='open "$(fzf)"'
 alias sden='subliminal download -l en'
 alias scim='scim --txtdelim=";"'
 alias sc=slackcat
+alias r=ranger
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
