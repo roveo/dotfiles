@@ -26,6 +26,7 @@ Plug 'zchee/deoplete-jedi'
 Plug 'mitsuhiko/vim-python-combined'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 Plug 'mhartington/oceanic-next'
 Plug 'Raimondi/delimitMate'
 Plug 'Yggdroot/indentLine'
@@ -35,6 +36,8 @@ Plug 'elzr/vim-json'
 Plug 'tomlion/vim-solidity'
 Plug 'trevordmiller/nova-vim'
 Plug 'sbdchd/neoformat'
+Plug 'posva/vim-vue'
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 call plug#end()
 
 colorscheme solarized
@@ -69,6 +72,9 @@ nmap <A-h> :bN<CR>
 autocmd FileType python nmap <F5> :!python3 %:p<CR>
 autocmd FileType python nmap <F6> :!python3 %:p
 
+" Custom indent
+autocmd FileType javascript,json,html,vue setlocal shiftwidth=2 tabstop=2
+
 " vim-json
 let g:vim_json_syntax_conceal = 0
 
@@ -83,3 +89,14 @@ let g:python3_host_prog = '/usr/local/bin/python3'
 
 nmap H :bp<CR>
 nmap L :bn<CR>
+
+" netrw file browser setup
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 4
+let g:netrw_altv = 1
+let g:netrw_winsize = 15
+augroup ProjectDrawer
+  autocmd!
+  autocmd VimEnter * :Vexplore
+augroup END<Paste>
