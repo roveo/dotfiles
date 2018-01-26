@@ -38,6 +38,7 @@ Plug 'trevordmiller/nova-vim'
 Plug 'sbdchd/neoformat'
 Plug 'posva/vim-vue'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'qpkorr/vim-bufkill'
 call plug#end()
 
 colorscheme solarized
@@ -90,3 +91,9 @@ let g:python3_host_prog = '/usr/local/bin/python3'
 nmap H :bp<CR>
 nmap L :bn<CR>
 
+" Disallow buffer switch in NERDTree
+autocmd FileType nerdtree noremap <buffer> <A-h> <nop>
+autocmd FileType nerdtree noremap <buffer> <A-l> <nop>
+
+" Close window with :BD
+nmap <C-x> :BD<CR>
