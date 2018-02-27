@@ -12,6 +12,7 @@ set encoding=UTF-8
 set number
 set cursorline
 set nowrap
+set colorcolumn=80
 
 call plug#begin('~/.config/nvim/plugged')
 Plug 'altercation/vim-colors-solarized'
