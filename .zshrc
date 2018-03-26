@@ -1,4 +1,18 @@
-export ZSH_THEME=frisk
+source ~/.config/zsh/antigen.zsh
+
+antigen use oh-my-zsh
+
+antigen bundle git
+
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-completions
+antigen bundle zsh-users/zsh-syntax-highlighting
+
+antigen bundle mafredri/zsh-async
+antigen bundle sindresorhus/pure
+
+antigen apply
+
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
@@ -24,16 +38,12 @@ export ZSH_THEME=frisk
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colored-man-pages brew osx web-search)
-
+#
 # User configuration
 
 export PATH="/usr/local/bin:/Users/roveo/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export PYTHONPATH="/Users/roveo/pylibs"
 # export MANPATH="/usr/local/man:$MANPATH"
-
-export ZSH=$HOME/.oh-my-zsh
-source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
